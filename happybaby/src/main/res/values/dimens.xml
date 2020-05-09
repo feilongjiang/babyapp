@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--padding-->
+    <dimen name="padding_sm">4dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="lg_padding">16dp</dimen>
+    <!--margin-->
+    <dimen name="margin_line">1dp</dimen>
+    <dimen name="margin_sm">4dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="lg_margin">16dp</dimen>
+    <dimen name="avatar_dimen">50dp</dimen>
+    <dimen name="user_item_dimen">30dp</dimen>
+
+    <!--字体尺寸-->
+    <dimen name="font_size_sm">14sp</dimen>
+    <dimen name="font_size">16sp</dimen>
+    <dimen name="font_size_lg">18sp</dimen>
+    <dimen name="subject_font_size">30sp</dimen>
+    <!--圆角-->
+    <dimen name="corners_sm">4dp</dimen>
+    <dimen name="corners">8dp</dimen>
+    <dimen name="corners_lg">16dp</dimen>
+
+    <dimen name="space_12">12dp</dimen>
+
+
+    <!--展示结果的image-->
+    <dimen name="result_image_size">40dp</dimen>
+
+    <!--分隔符-->
+    <dimen name="spacing_medium">1dp</dimen>
+
+    <dimen name="tools_image_width">40dp</dimen>
+</resources>

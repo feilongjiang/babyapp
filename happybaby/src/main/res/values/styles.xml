@@ -1,0 +1,56 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="windowActionBar">false</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonStyle">@style/button</item>
+    </style>
+<style name="image_button" parent="Widget.AppCompat.ImageButton">
+    <item name="android:background">@drawable/ic_rect_round_selector</item>
+</style>
+    <style name="title">
+        <item name="android:textColor">@color/title</item>
+        <item name="android:textSize">@dimen/font_size_lg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/lightsteelblue</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
+    </style>
+    <style name="pink_button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_btn_gray_pressed_dkgray</item>
+    </style>
+
+    <style name="avatar" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/ic_circle_state</item>
+    </style>
+
+    <style name="user_linearLayout_style">
+        <item name="android:background">@drawable/ic_user_vector</item>
+    </style>
+
+    <style name="padding_start_end">
+        <item name="android:layout_marginStart">@dimen/lg_padding</item>
+        <item name="android:layout_marginEnd">@dimen/lg_padding</item>
+    </style>
+
+    <style name="padding_start_end_lg">
+        <item name="paddingStart">@dimen/lg_padding</item>
+        <item name="paddingEnd">@dimen/lg_padding</item>
+    </style>
+
+    <style name="anima_top_in">
+        <item name="android:windowEnterAnimation">@anim/push_top_in</item>
+        //进入时的动画
+    </style>
+
+    <style name="anima_top_out">
+        <item name="android:animation">@anim/push_top_out</item>
+    </style>
+
+</resources>

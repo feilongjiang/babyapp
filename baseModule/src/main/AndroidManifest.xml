@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.apps.baseProject">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.example.apps.baseProject.provider" />
+    <application>
+        <provider
+            android:name=".contentprovider.IProvider"
+            android:authorities="${applicationId}.contentprovider"
+            android:multiprocess="false"
+            android:permission="com.example.apps.baseProject.provider"
+            android:process=":IProvider" />
+    </application>
+
+</manifest>

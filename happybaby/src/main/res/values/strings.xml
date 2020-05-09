@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">快乐宝贝</string>
+    <string name="title_home">Home</string>
+    <string name="title_happy">happy</string>
+    <string name="title_user">user</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"用户名或密码错误，请重试"</string>
+    <string name="tourist">游客</string>
+    <string name="logout">退出</string>
+    <string name="set_up">设置</string>
+    <string name="close">关闭</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="fourOperations">四则运算</string>
+    <string name="action_settings">Settings</string>
+    <string name="range_subject_title">请选择题目数量和目数！</string>
+    <string name="select_subject_num">选择题数量</string>
+    <string name="mesh">选择目数</string>
+    <string name="start">开始做题</string>
+    <string name="subject_num">第%1$S题/共%2$s题</string>
+
+    <!--显示结果-->
+    <string name="resultdialogTitle">%1$s你是最棒的！</string>
+    <string name="time_cost">用时%1$s</string>
+    <string name="subject_num_result">共%1$s题 答对%2$s题 </string>
+    <string name="scope">得分：%1$s分</string>
+    <string name="question_type">题型: %1$s。</string>
+
+    <!--绘画-->
+    <string name="hello_world">Hello world!</string>
+    <string name="color">颜色</string>
+    <string name="color_red">红色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="width">宽度</string>
+    <string name="width_1">细</string>
+    <string name="width_2">中</string>
+    <string name="width_3">粗</string>
+    <string name="clear">擦除</string>
+    <string name="save">保存</string>
+    <string name="share">分享</string>
+    <string name="clear_all">clear all</string>
+</resources>

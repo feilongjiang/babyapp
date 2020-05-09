@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.apps.happybaby.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_user"
+            app:destination="@+id/navigation_user"
+            app:enterAnim="@anim/push_left_in"
+            app:exitAnim="@anim/push_left_out"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_happy"
+        android:name="com.example.apps.happybaby.ui.happy.HappyFragment"
+        android:label="@string/title_happy"
+        tools:layout="@layout/fragment_happy" />
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.example.apps.happybaby.ui.user.UserFragment"
+        android:label="@string/title_user"
+        tools:layout="@layout/fragment_user">
+        <argument
+            android:name="userId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+</navigation>

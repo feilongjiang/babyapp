@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/progress_background"
+        android:gravity="center_vertical"
+        android:paddingBottom="4dp"
+        android:paddingRight="25px"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_icon"
+            android:layout_toEndOf="@+id/imageView_icon"
+            android:layout_toRightOf="@+id/imageView_icon"
+            android:singleLine="true"
+            android:text="---"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/notification_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:layout_alignLeft="@+id/notification_title"
+            android:layout_alignStart="@+id/notification_title"
+            android:layout_below="@+id/notification_title"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/progressbar_background"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_red" />
+
+    </RelativeLayout>
+</RelativeLayout>

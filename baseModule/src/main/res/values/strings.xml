@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">快乐宝贝</string>
+    <string name="error_no_record">没有相关记录，点击刷新</string>
+    <string name="error_network">网络未连接!</string>
+    <string name="hint_exit">再按一次返回键退出应用</string>
+    <string name="ViewHolder">ViewHolder</string>
+    <string name="record_hint">录音结束倒计时:#num#秒</string>
+
+    <string name="select_app">选择应用</string>
+
+    <string name="tag_item_position">tag_item_position</string>
+
+    <string name="glide_tag_placeholder">glide_tag_placeholder</string>
+    <string name="glide_tag_failed">glide_tag_failed</string>
+    <string name="glide_tag_null">glide_tag_null</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+</resources>

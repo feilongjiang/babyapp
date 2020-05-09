@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.example.apps.happybaby.data.entity.User" />
+
+        <variable
+            name="viewModel"
+            type="com.example.apps.happybaby.ui.user.UserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        tools:context=".ui.user.UserFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/avater_box"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/user_ad1"
+            android:padding="@dimen/normal_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/avater"
+                style="@style/avatar"
+                android:layout_width="@dimen/avatar_dimen"
+                android:layout_height="@dimen/avatar_dimen"
+                android:layout_marginStart="8dp"
+                android:scaleType="centerInside"
+                android:src="@{viewModel.user.avatar}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.14" />
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:ems="10"
+                android:text="@{viewModel.user.name}"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/avater"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.193" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/user_linearLayout_style"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal"
+            android:paddingBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/user_setting"
+                style="@style/padding_start_end"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_item_dimen"
+                android:layout_gravity="bottom"
+                android:background="@drawable/ic_line_background_24dp"
+                android:gravity="start">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/normal_padding"
+                    android:src="@drawable/ic_set_up" />
+
+                <TextView
+                    style="@style/padding_start_end_lg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/set_up"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

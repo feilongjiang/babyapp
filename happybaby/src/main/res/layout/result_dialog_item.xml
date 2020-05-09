@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="question"
+            type="com.example.apps.happybaby.ui.fourOper.Question" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sm">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+
+            <TextView
+                android:id="@+id/error_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{question.mSubject}"
+                android:textSize="@dimen/font_size_sm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/error_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:text="@{question.mUserAnswer}"
+            android:textSize="@dimen/font_size_sm" />
+
+        <TextView
+            android:id="@+id/correct_answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:gravity="left"
+            android:text="@{question.mMnswer}"
+            android:textSize="@dimen/font_size_sm"
+            tools:text="8" />
+    </LinearLayout>
+</layout>

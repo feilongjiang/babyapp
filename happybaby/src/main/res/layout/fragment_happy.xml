@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/color_imageBtn"
+                        style="@style/image_button"
+                        android:layout_width="@dimen/tools_image_width"
+                        android:layout_height="@dimen/tools_image_width"
+                        android:layout_marginStart="@dimen/lg_margin"
+                        android:src="@drawable/ic_brush_black_24dp"
+                        android:tooltipText="@string/color" />
+
+                    <Spinner
+                        android:id="@+id/width_spinner"
+                        style="@style/image_button"
+                        android:layout_width="@dimen/tools_image_width"
+                        android:layout_height="@dimen/tools_image_width"
+                        android:layout_marginStart="@dimen/lg_margin"
+                        android:background="@drawable/ic_width_24dp"
+                        android:entries="@array/spincolor"
+                        android:padding="@dimen/normal_margin"
+                        android:tooltipText="@string/clear" />
+
+                    <ImageButton
+                        android:id="@+id/clear_imageBtn"
+                        style="@style/image_button"
+                        android:layout_width="@dimen/tools_image_width"
+                        android:layout_height="@dimen/tools_image_width"
+                        android:layout_marginStart="@dimen/lg_margin"
+                        android:src="@drawable/ic_settings_bluetooth_black_24dp"
+                        android:tooltipText="@string/clear" />
+
+                    <ImageButton
+                        android:id="@+id/share_imageBtn"
+                        style="@style/image_button"
+                        android:layout_width="@dimen/tools_image_width"
+                        android:layout_height="@dimen/tools_image_width"
+                        android:layout_marginStart="@dimen/lg_margin"
+                        android:src="@drawable/ic_share_selector"
+                        android:tooltipText="@string/share" />
+
+                    <ImageButton
+                        android:id="@+id/save_imageBtn"
+                        style="@style/image_button"
+                        android:layout_width="@dimen/tools_image_width"
+                        android:layout_height="@dimen/tools_image_width"
+                        android:layout_marginStart="@dimen/lg_margin"
+                        android:src="@drawable/ic_save_black_24dp"
+                        android:tooltipText="@string/save" />
+
+                    <ImageButton
+                        android:id="@+id/clear_all_imageBtn"
+                        style="@style/image_button"
+                        android:layout_width="@dimen/tools_image_width"
+                        android:layout_height="@dimen/tools_image_width"
+                        android:layout_marginStart="@dimen/lg_margin"
+                        android:src="@drawable/ic_all_out_black_24dp"
+                        android:tooltipText="@string/clear_all" />
+
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.example.apps.happybaby.views.DrawView
+            android:id="@+id/drawView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</layout>

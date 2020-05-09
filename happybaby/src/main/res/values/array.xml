@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spincolor">
+        <item>one</item>
+        <item>five</item>
+        <item>ten</item>
+    </array>
+</resources>

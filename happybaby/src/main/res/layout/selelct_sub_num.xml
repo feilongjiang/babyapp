@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/mesh" />
+
+        <RadioGroup
+            android:id="@+id/mesh_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/lg_padding"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="237dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/select_subject_num" />
+
+        <RadioGroup
+            android:id="@+id/num_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/lg_padding"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="237dp">
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/color"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_brush_black_24dp">
+        <menu>
+            <!-- 定义一组单选菜单项 -->
+            <group android:checkableBehavior="single">
+                <!-- 定义子菜单 -->
+                <item
+                    android:id="@+id/red"
+                    android:title="@string/color_red" />
+                <item
+                    android:id="@+id/green"
+                    android:title="@string/color_green" />
+                <item
+                    android:id="@+id/blue"
+                    android:title="@string/color_blue" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:title="@string/width"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_width_24dp">
+        <menu>
+            <!-- 定义子菜单 -->
+            <group>
+                <item
+                    android:id="@+id/width_1"
+                    android:title="@string/width_1" />
+                <item
+                    android:id="@+id/width_2"
+                    android:title="@string/width_2" />
+                <item
+                    android:id="@+id/width_3"
+                    android:title="@string/width_3" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/clear"
+        android:title="@string/clear"
+        android:icon="@drawable/ic_settings_bluetooth_black_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share_selector"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/save"
+        android:title="@string/save"
+        android:icon="@drawable/ic_save_black_24dp"
+        app:showAsAction="ifRoom" />
+
+</menu>
